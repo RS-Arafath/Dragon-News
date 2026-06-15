@@ -6,12 +6,12 @@ import Navbar from '@/components/shared/Navbar';
 const poppins = Poppins({
   variable: '--font-poppins',
   subsets: ['latin'],
-  weight : ['400','500','600','800']
+  weight: ['400', '500', '600', '800'],
 });
- export const inter = Inter({
+export const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin'],
-  weight : ['400','500','600','800']
+  weight: ['400', '500', '600', '800'],
 });
 
 export const metadata = {
@@ -26,9 +26,9 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${poppins.variable} h-full antialiased`}
     >
-    <body className={`${poppins.className} min-h-full flex flex-col`}>
-  {children}
-</body>
+      <body className={`${poppins.className} min-h-full flex flex-col`}>
+        {children}
+      </body>
     </html>
   );
 }
