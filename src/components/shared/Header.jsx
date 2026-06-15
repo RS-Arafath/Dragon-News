@@ -8,12 +8,12 @@ const Header = () => {
       <Image
         className="mx-auto"
         src={logo}
-        height={300}
-        width={200}
+        height={400}
+        width={400}
         alt="logo"
       ></Image>
-      <p className="text-[10px] italic">Journalism Without Fear or Favour</p>
-      <p className="text-[10px] font-semibold text-gray-500">
+      <p className=" italic">Journalism Without Fear or Favour</p>
+      <p className=" font-semibold text-gray-500">
         {format(new Date(), 'EEEE, MMMM dd YYY')}{' '}
       </p>
     </div>
