@@ -14,7 +14,7 @@ const Header = () => {
       ></Image>
       <p className=" italic">Journalism Without Fear or Favour</p>
       <p className=" font-semibold text-gray-500">
-        {format(new Date(), 'EEEE, MMMM dd YYY')}{' '}
+        {format(new Date(), 'EEEE, MMMM dd yyyy')}{' '}
       </p>
     </div>
   );
