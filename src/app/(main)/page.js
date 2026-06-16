@@ -12,7 +12,7 @@ export default async function Home() {
   return (
     <div className="grid grid-cols-4 gap-5 ">
       <div className="bg-gray-100 rounded p-5">
-        <h2 className="text-xl sm:text-2xl text-black font-bold text-center bg-slate-200 p-3 rounded">
+        <h2 className="text-lg sm:text-2xl text-black font-bold text-center bg-slate-200 p-3 rounded">
           All Categories
         </h2>
         <ul className="flex flex-col my-5 gap-3">
@@ -25,7 +25,7 @@ export default async function Home() {
         border border-gray-200
         p-2 sm:p-3
         rounded-2xl
-        text-lg sm:text-xl
+        text-base sm:text-lg md:text-xl
         font-semibold
         text-center
         cursor-pointer
