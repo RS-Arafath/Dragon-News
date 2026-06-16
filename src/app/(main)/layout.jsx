@@ -2,6 +2,7 @@ import BreakingNews from '@/components/shared/BreakingNews';
 import Header from '@/components/shared/Header';
 import Navbar from '@/components/shared/Navbar';
 import React from 'react';
+import Career from './career/page';
 
 const MainLayout = ({children}) => {
   return (
@@ -10,6 +11,7 @@ const MainLayout = ({children}) => {
       <Header></Header>
       <BreakingNews></BreakingNews>
       <Navbar></Navbar>
+     
 {children}
     </div>
   );

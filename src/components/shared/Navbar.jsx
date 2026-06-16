@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 
 import userAvatar from '@/assets/user.png';
+
 const Navbar = () => {
   return (
     <div className="flex justify-between items-center my-5">
@@ -17,14 +18,14 @@ const Navbar = () => {
             <Link href={'/about-us'}>About</Link>
           </li>
           <li className="hover:text-red-600 duration-200">
-            <Link href={'/carrer'}>Career</Link>
+            <Link href={'/career'}>Career</Link>
           </li>
         </ul>
       </div>
-      <div className="flex gap-2">
-         <Image src={userAvatar} height={38} width={0} alt="user_img"></Image>
-   
-        <i data-lucide="circle-user"></i>
+      <div className="flex gap-1 sm:gap-2 px-2">
+        <Image src={userAvatar}width={40} alt="user_img"></Image>
+
+        
         <button className="btn bg-black text-white">LogIn</button>
       </div>
     </div>

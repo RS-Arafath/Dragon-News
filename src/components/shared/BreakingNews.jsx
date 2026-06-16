@@ -2,7 +2,7 @@ import Marquee from 'react-fast-marquee';
 
 const BreakingNews = () => {
   return (
-    <div className=" flex justify-between gap-4 items-center bg-gray-200 ">
+    <div className=" flex justify-between gap-4 items-center bg-gray-200  ">
       <button className="btn bg-red-600 text-white">Latest</button>
       <Marquee
      
