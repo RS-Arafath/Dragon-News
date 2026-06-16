@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="flex gap-1 sm:gap-2 px-2">
         <Image src={userAvatar} width={40} alt="user_img"></Image>
 
-        <button className="btn bg-black text-white">LogIn</button>
+        <button className="btn bg-black text-white"><Link href={'/login'}>LogIn</Link></button>
       </div>
     </div>
   );
