@@ -3,8 +3,8 @@ import React from 'react';
 
 const Career = () => {
   return (
-    <main className="h-screen bg-slate-50 flex items-center justify-center px-4 mt-10">
-      <div className="w-full max-w-2xl rounded-3xl border border-slate-200 bg-white p-6 md:p-8 shadow-sm">
+    <main className="  bg-slate-50 flex items-center justify-center px-4 mt-10">
+      <div className="w-full my-10 sm:my-12 md:my-15 max-w-2xl rounded-3xl border border-slate-200 bg-white p-6 md:p-8 shadow-sm">
         <div className="text-center">
           <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50">
             <span className="text-2xl">💼</span>
