@@ -11,13 +11,13 @@ const Navbar = () => {
       <div>{/* //fake div */}</div>
       <div className=" ">
         <ul className="flex justify-center items-center gap-3 md:gap-5 text-gray-500">
-          <li className="hover:text-red-600 duration-200">
+          <li className="hover:text-red-600 md:text-lg duration-200">
             <NavLink href={'/'}>Home</NavLink>
           </li>
-          <li className="hover:text-red-600 duration-200">
+          <li className="hover:text-red-600 md:text-lg duration-200">
             <NavLink href={'/about-us'}>About</NavLink>
           </li>
-          <li className="hover:text-red-600 duration-200">
+          <li className="hover:text-red-600 details-content:text-lg duration-200">
             <NavLink href={'/career'}>Career</NavLink>
           </li>
         </ul>

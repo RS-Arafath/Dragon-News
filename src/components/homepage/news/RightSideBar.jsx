@@ -6,6 +6,9 @@ import lifeStyle from '@/assets/lifeStyle.jpg';
 import enterTainment from '@/assets/enterTainment.jpg';
 import underConstructionPage from '@/app/(main)/underConstraction/page';
 import DailyFeature from '../DailyFeature';
+import SocialConnect from './SocialConnect';
+
+
 const RightSideBar = () => {
   return (
     <div className=" bg-gray-100 p-4 rouded">
@@ -79,7 +82,12 @@ const RightSideBar = () => {
           </button>
         </div>
       </div>
-     <DailyFeature></DailyFeature>
+
+      {/* Social media connection */}
+    <SocialConnect></SocialConnect>
+     
+      {/*   Daily feature layout */}
+      <DailyFeature></DailyFeature>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import React from 'react';
 
 const underConstructionPage = () => {
   return (
-    <div className="w-screen h-screen flex flex-col items-center justify-center p-4 md:p-8 overflow-hidden relative bg-slate-50">
+    <div className="my-10 flex flex-col items-center justify-center p-4 md:p-8 overflow-hidden relative bg-slate-50">
       <div className="w-full max-w-md md:max-w-3xl bg-white border border-slate-200/80 rounded-3xl shadow-xl shadow-slate-200/50 px-6 md:px-12 py-8 md:py-10 text-center flex flex-col justify-center items-center max-h-[90vh] sm:max-h-none overflow-y-auto sm:overflow-visible">
         <div className="flex items-center justify-center h-16 w-16 rounded-2xl bg-blue-50 text-blue-600 mb-5 shadow-inner animate-bounce duration-1000">
           <svg
