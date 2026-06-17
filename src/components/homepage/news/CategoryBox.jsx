@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CategoryBox = ({ categories,activeId }) => {
+const CategoryBox = ({ categories, activeId }) => {
   return (
     <div>
       <div className="bg-gray-100 rounded p-5">
@@ -12,8 +12,7 @@ const CategoryBox = ({ categories,activeId }) => {
             return (
               <li
                 key={category.category_id}
-                className="
-       m group
+                className={`${activeId === category.category_id && 'bg-red-200 text-black  '} group
         border border-gray-200
         p-2 sm:p-3
         rounded-2xl
@@ -30,8 +29,7 @@ const CategoryBox = ({ categories,activeId }) => {
         hover:shadow-red-500/20
         hover:text-red-600
         active:scale-90
-active:translate-y-0
-      "
+active:translate-y-0`}
               >
                 {category.category_name}
               </li>
