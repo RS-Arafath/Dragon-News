@@ -1,4 +1,5 @@
 import CategoryBox from '@/components/homepage/news/CategoryBox';
+import RightSideBar from '@/components/homepage/news/RightSideBar';
 
 async function getCategories() {
   const res = await fetch(
@@ -14,8 +15,12 @@ export default async function Home() {
   return (
     <div className="grid grid-cols-4 gap-5 ">
       <CategoryBox categories={categories} activeId={'01'}></CategoryBox>
+
+
       <div className="bg-pink-200 col-span-2 ">main</div>
-      <div className="bg-blue-200 ">social</div>
+      <div className="">
+        <RightSideBar></RightSideBar>
+      </div>
     </div>
   );
 }
