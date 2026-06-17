@@ -1,11 +1,12 @@
 import React from 'react';
 
-const page = () => {
+const NewsCategoryPage = async ({ params }) => {
+  
   return (
     <div>
-      
+      news by cat
     </div>
   );
 };
 
-export default page;
+export default NewsCategoryPage;
