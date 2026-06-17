@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const CategoryBox = ({ categories, activeId }) => {
@@ -14,7 +15,7 @@ const CategoryBox = ({ categories, activeId }) => {
                 key={category.category_id}
                 className={`${activeId === category.category_id && 'bg-red-200 text-black  '} group
         border border-gray-200
-        p-2 sm:p-3
+      
         rounded-2xl
         text-base sm:text-lg md:text-xl
         font-semibold
@@ -31,7 +32,12 @@ const CategoryBox = ({ categories, activeId }) => {
         active:scale-90
 active:translate-y-0`}
               >
-                {category.category_name}
+                <Link
+                  href={`/category/${category.categoty_id}`}
+                  className="block p-2 sm:p-3"
+                >
+                  {category.category_name}
+                </Link>
               </li>
             );
           })}
