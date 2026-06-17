@@ -13,7 +13,7 @@ const CategoryBox = ({ categories, activeId }) => {
             return (
               <li
                 key={category.category_id}
-                className={`${activeId === category.category_id && 'bg-red-200 text-black  '} group
+                className={`${activeId === category.category_id && 'border-red-500 border-2 text-black  '} group
         border border-gray-200
       
         rounded-2xl

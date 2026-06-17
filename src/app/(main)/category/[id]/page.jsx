@@ -26,7 +26,7 @@ const NewsCategoryPage = async ({ params }) => {
   console.log('news', news);
   return (
     <div className="grid grid-cols-4 gap-5 ">
-      <CategoryBox categories={categories} activeId={'01'}></CategoryBox>
+      <CategoryBox categories={categories} activeId={id}></CategoryBox>
 
       <div className="bg-pink-200 col-span-2 ">
         {news.length > 0 ? (
