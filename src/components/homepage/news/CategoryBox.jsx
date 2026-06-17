@@ -33,7 +33,7 @@ const CategoryBox = ({ categories, activeId }) => {
 active:translate-y-0`}
               >
                 <Link
-                  href={`/category/${category.categoty_id}`}
+                  href={`/category/${category.category_id}`}
                   className="block p-2 sm:p-3"
                 >
                   {category.category_name}
