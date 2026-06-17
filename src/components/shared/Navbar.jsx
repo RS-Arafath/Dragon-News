@@ -7,17 +7,17 @@ import NavLink from './NavLink';
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center my-5">
+    <div className="flex justify-between items-center my-8">
       <div>{/* //fake div */}</div>
       <div className=" ">
         <ul className="flex justify-center items-center gap-3 md:gap-5 text-gray-500">
-          <li className="hover:text-red-600 md:text-lg duration-200">
+          <li className="hover:text-red-600 font-semibold md:text-xl duration-200">
             <NavLink href={'/'}>Home</NavLink>
           </li>
-          <li className="hover:text-red-600 md:text-lg duration-200">
+          <li className="hover:text-red-600 font-semibold md:text-xl duration-200">
             <NavLink href={'/about-us'}>About</NavLink>
           </li>
-          <li className="hover:text-red-600 details-content:text-lg duration-200">
+          <li className="hover:text-red-600 font-semibold md:text-xl duration-200">
             <NavLink href={'/career'}>Career</NavLink>
           </li>
         </ul>
@@ -25,7 +25,9 @@ const Navbar = () => {
       <div className="flex gap-1 sm:gap-2 px-2">
         <Image src={userAvatar} width={40} alt="user_img"></Image>
 
-        <button className="btn bg-black text-white"><Link href={'/login'}>LogIn</Link></button>
+        <button className="btn bg-black text-white">
+          <Link href={'/login'}>LogIn</Link>
+        </button>
       </div>
     </div>
   );
