@@ -1,4 +1,4 @@
-import { Inter, Poppins } from 'next/font/google';
+import { Inter, Poppins, Black_Ops_One,Mystery_Quest } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/shared/Header';
 import Navbar from '@/components/shared/Navbar';
@@ -7,6 +7,11 @@ const poppins = Poppins({
   variable: '--font-poppins',
   subsets: ['latin'],
   weight: ['400', '500', '600', '800'],
+});
+const mysteryQuest = Mystery_Quest({
+  variable: '--font-MysteryQuest',
+  subsets: ['latin'],
+  weight: ['400'],
 });
 export const inter = Inter({
   variable: '--font-inter',
@@ -24,7 +29,7 @@ export default function RootLayout({ children }) {
     <html
       data-theme="light"
       lang="en"
-      className={`${poppins.variable} h-full antialiased`}
+      className={`${poppins.variable} ${mysteryQuest.variable} h-full antialiased`}
     >
       <body className={`${poppins.className} min-h-full flex flex-col`}>
         {children}
