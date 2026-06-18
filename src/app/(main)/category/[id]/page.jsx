@@ -1,22 +1,10 @@
 import CategoryBox from '@/components/homepage/news/CategoryBox';
 import NoNewsCard from '@/components/homepage/news/NoNewscard';
 import RightSideBar from '@/components/homepage/news/RightSideBar';
-import React from 'react';
-/* right side category fetch */
-async function getCategories() {
-  const res = await fetch(
-    'https://openapi.programming-hero.com/api/news/categories',
-  );
-  const data = await res.json();
-  return data.data.news_category;
-}
-async function getNewsByCategoryId(category_id) {
-  const res = await fetch(
-    `https://openapi.programming-hero.com/api/news/category/${category_id}`,
-  );
-  const data = await res.json();
-  return data.data;
-}
+import { getCategories, getNewsByCategoryId } from '@/lib/data';
+
+
+
 const NewsCategoryPage = async ({ params }) => {
   const { id } = await params;
   console.log(id, 'params pass');
