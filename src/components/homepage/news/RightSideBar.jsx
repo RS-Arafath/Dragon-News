@@ -10,7 +10,7 @@ import SocialConnect from './SocialConnect';
 
 const RightSideBar = () => {
   return (
-    <div className=" bg-gray-100  p-4 rounded">
+    <div className=" bg-gray-100  p-4 rounded ">
       <div>
         <h2 className="text-xl sm:text-2xl text-gray-800 mb-5 font-bold">
           Login with
