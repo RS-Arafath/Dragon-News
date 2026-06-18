@@ -11,10 +11,11 @@ const NewsFeedPage = ({ news }) => {
     author: { img } = {},
     author: { name },
     author: { published_date },
-image_url,
+    image_url,
     thumbnail_url,
+    details
   } = news;
-  console.log(news,'news feed')
+  console.log(news, 'news feed');
   return (
     <div className="my-5 rounded px-5">
       <div className="card bg-base-100 w-full shadow-sm overflow-hidden">
@@ -49,7 +50,9 @@ image_url,
 
           {/* title */}
           <div className="px-4 pt-3">
-            <h2 className="card-title text-slate-800 text-base md:text-lg lg:text-xl font-bold">{title}</h2>
+            <h2 className="card-title text-slate-800 text-base md:text-lg lg:text-xl font-bold">
+              {title}
+            </h2>
           </div>
 
           {/* image */}
@@ -62,6 +65,7 @@ image_url,
               className="w-full rounded-lg object-cover"
             />
           </figure>
+          <p className="px-4 py-4 truncate ">{details}</p>
         </div>
       </div>
     </div>

@@ -9,7 +9,8 @@ const Navbar = () => {
   return (
     <div
       className="flex justify-between items-center my-8 font-mystery-quest sticky top-0 left-0 py-1 w-full z-50 
-bg-white/20 backdrop-blur-lg 
+bg-white/10   backdrop-blur-xl 
+border-b border-white/10 
  
 shadow-none"
     >
@@ -28,7 +29,7 @@ shadow-none"
         </ul>
       </div>
       <div className="flex gap-1 sm:gap-2 px-2 justify-center items-center">
-        <CgProfile className='text-3xl' />
+        <CgProfile className="text-3xl" />
         {/*  <Image src={userAvatar} width={40} alt="user_img"></Image> */}
 
         <button className="btn bg-black px-2  sm:px-5  text-white">
