@@ -19,7 +19,7 @@ const NewsFeedPage = ({ news }) => {
     details,
     total_view,
   } = news;
-  console.log(news, 'news feed');
+  //console.log(news, 'news feed');
   return (
     <div className="my-5 rounded px-5">
       <div className="card bg-base-100 pb-10 w-full shadow-sm overflow-hidden">
