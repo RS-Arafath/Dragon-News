@@ -4,7 +4,7 @@ import React from 'react';
 const CategoryBox = ({ categories, activeId }) => {
   return (
     <div>
-      <div className="bg-gray-100 rounded p-5">
+      <div className="bg-gray-100 rounded p-5 overflow-x-hidden">
         <h2 className="text-lg sm:text-2xl text-black font-bold text-center bg-slate-200 p-3 rounded">
           All Categories
         </h2>
