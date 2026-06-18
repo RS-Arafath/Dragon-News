@@ -1,11 +1,11 @@
 import React from 'react';
 
-const page = () => {
+const newsPage = ({params}) => {
   return (
     <div>
-      
+      news
     </div>
   );
 };
 
-export default page;
+export default newsPage;

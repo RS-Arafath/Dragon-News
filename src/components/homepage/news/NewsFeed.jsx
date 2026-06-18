@@ -73,7 +73,7 @@ const NewsFeedPage = ({ news }) => {
             <span className="  ">
               <Link
                 className="font-semibold text-amber-500 hover:text-amber-400 duration-100"
-                href={'#'}
+                href={`/news/${news._id}`}
               >
                 Read More...
               </Link>
