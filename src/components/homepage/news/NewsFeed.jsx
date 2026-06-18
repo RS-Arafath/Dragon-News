@@ -18,7 +18,7 @@ const NewsFeedPage = ({ news }) => {
   console.log(news, 'news feed');
   return (
     <div className="my-5 rounded px-5">
-      <div className="card bg-base-100 w-full shadow-sm overflow-hidden">
+      <div className="card bg-base-100 pb-10 w-full shadow-sm overflow-hidden">
         <div className="card-body p-0 space-y-1 sm:space-y-2 md:space-y-3">
           {/* author */}
           <div className="flex items-center justify-between bg-gray-100 px-4 py-4">
@@ -65,7 +65,7 @@ const NewsFeedPage = ({ news }) => {
               className="w-full rounded-lg object-cover"
             />
           </figure>
-          <p className="px-4 py-4 truncate ">{details}</p>
+          <p className="px-4 py-4 line-clamp-2 ">{details}</p>
         </div>
       </div>
     </div>
