@@ -10,10 +10,14 @@ const newsDetailsPage =async ({ params }) => {
   const news = await getNewsDetailsById(id);
   console.log(news, 'details');
   
-  const { title, image_url, details } = news;
+  const {
+    title,
+    image_url,
+    details,
+    author: { published_date },
+  } = news;
   return (
     <div className="container max-w-4xl mx-auto my-8 p-4 md:p-6 bg-white border border-gray-100 rounded-2xl shadow-sm">
-     
       <div className="relative w-full aspect-video md:aspect-[16/9] rounded-xl overflow-hidden mb-6">
         <Image
           src={image_url}
@@ -25,7 +29,7 @@ const newsDetailsPage =async ({ params }) => {
       </div>
 
       <div className="text-xs md:text-sm text-gray-400 font-sans leading-relaxed mb-4">
-        {format(new Date(), 'EEEE, MMMM dd yyyy')}{' '}
+        {published_date}
       </div>
 
       <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 leading-tight mb-4 font-sans">
@@ -36,14 +40,13 @@ const newsDetailsPage =async ({ params }) => {
         <p>{details}</p>
       </div>
 
-     
       <div className="flex justify-start">
         <Link
           href={`/category/${news.category_id}`}
           className="btn bg-red-600 hover:bg-red-500 text-white border-none rounded-lg px-6 flex items-center gap-2 normal-case font-medium transition-colors"
         >
           <FaArrowLeft className="text-sm" />
-          All news in this category
+          See other news for this category
         </Link>
       </div>
     </div>
