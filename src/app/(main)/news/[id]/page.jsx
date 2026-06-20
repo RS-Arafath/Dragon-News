@@ -39,8 +39,8 @@ const newsDetailsPage =async ({ params }) => {
      
       <div className="flex justify-start">
         <Link
-          href={'/'}
-          className="btn bg-[#d82352] hover:bg-[#b01a40] text-white border-none rounded-lg px-6 flex items-center gap-2 normal-case font-medium transition-colors"
+          href={`/category/${news.category_id}`}
+          className="btn bg-red-600 hover:bg-red-500 text-white border-none rounded-lg px-6 flex items-center gap-2 normal-case font-medium transition-colors"
         >
           <FaArrowLeft className="text-sm" />
           All news in this category

@@ -78,7 +78,7 @@ const NewsFeedPage = ({ news }) => {
                 Read More...
               </Link>
             </span>{' '}
-            <div className="divider my-0 "></div>
+            <div className="divider  "></div>
           </div>
 
           <div className="px-4 flex justify-between items-center  ">
