@@ -15,7 +15,7 @@ const NewsCategoryPage = async ({ params }) => {
   const news = await getNewsByCategoryId(id);
  // console.log('news', news);
   return (
-    <div className="grid grid-cols-4 gap-5 items-start">
+    <div className="grid grid-cols-4 gap-5 items-start mb-10">
       <div className="sticky top-20 h-screen overflow-y-auto no-scrollbar">
         <CategoryBox categories={categories} activeId={id}></CategoryBox>
       </div>
