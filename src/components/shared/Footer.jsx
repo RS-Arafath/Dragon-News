@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa';
 import footer_Logo from "@/assets/logo.png"
 export default function FooterPage() {
   return (
@@ -32,10 +32,10 @@ export default function FooterPage() {
               <FaFacebook size={18} />
             </Link>
             <Link
-              href="#"
+              href="https://www.linkedin.com/in/rs-arafath/"
               className="h-9 w-9 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-500 hover:bg-[#1DA1F2] hover:text-white hover:border-[#1DA1F2] transition-colors duration-300 shadow-xs"
             >
-              <FaTwitter size={18} />
+              <FaLinkedin size={18} />
             </Link>
             <Link
               href="#"
@@ -44,7 +44,7 @@ export default function FooterPage() {
               <FaInstagram size={18} />
             </Link>
             <Link
-              href="#"
+              href="https://www.youtube.com/@RSArafath"
               className="h-9 w-9 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-500 hover:bg-[#FF0000] hover:text-white hover:border-[#FF0000] transition-colors duration-300 shadow-xs"
             >
               <FaYoutube size={18} />
