@@ -15,9 +15,9 @@ export const generateMetadata = async ({ params }) => {
   //  Find the specific category object that matches the URL param 'id'
   const currentCategory = categories?.find((cat) => cat.category_id === id);
 
-  // 4. Return the metadata. Fallback to a default title if the category is not found.
+  //  Return the metadata. Fallback to a default title if the category is not found.
   return {
-    title: currentCategory ? currentCategory.category_name : 'Category Details',
+    title: currentCategory ? currentCategory.category_name : 'The Dragon News',
   };
 };
 

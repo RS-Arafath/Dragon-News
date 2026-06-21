@@ -54,7 +54,7 @@ const underConstructionPage = () => {
           <div className="w-full">
             <Link
               href="/"
-              className="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-semibold text-white bg-slate-900 hover:bg-slate-800 active:bg-slate-950 rounded-xl shadow-md shadow-slate-900/10 transition-all duration-200 ease-in-out transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900 group"
+              className="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-semibold text-white bg-red-600 hover:bg-red-700 active:bg-red-600 rounded-xl shadow-md shadow-red-700/10 transition-all duration-200 ease-in-out transform hover:-translate-y-0.5 focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-red-600 group"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
