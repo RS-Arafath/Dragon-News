@@ -14,7 +14,6 @@ export default function FooterPage() {
             <Image
               src={footer_Logo}
               alt="footer_logo"
-              
               className="font-mystery-quest text-2xl md:text-3xl cursor-pointer text-gray-900 tracking-wider object-contain"
               priority
             />
@@ -28,25 +27,25 @@ export default function FooterPage() {
           <div className="flex gap-4 mt-2">
             <Link
               href="#"
-              className="h-9 w-9 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-500 hover:bg-red-500 hover:text-white hover:border-red-500 transition-colors duration-300 shadow-xs"
+              className="h-9 w-9 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-500 hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2] transition-colors duration-300 shadow-xs"
             >
               <FaFacebook size={18} />
             </Link>
             <Link
               href="#"
-              className="h-9 w-9 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-500 hover:bg-red-500 hover:text-white hover:border-red-500 transition-colors duration-300 shadow-xs"
+              className="h-9 w-9 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-500 hover:bg-[#1DA1F2] hover:text-white hover:border-[#1DA1F2] transition-colors duration-300 shadow-xs"
             >
               <FaTwitter size={18} />
             </Link>
             <Link
               href="#"
-              className="h-9 w-9 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-500 hover:bg-red-500 hover:text-white hover:border-red-500 transition-colors duration-300 shadow-xs"
+              className="h-9 w-9 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-500 hover:bg-[#E4405F] hover:text-white hover:border-[#E4405F] transition-colors duration-300 shadow-xs"
             >
               <FaInstagram size={18} />
             </Link>
             <Link
               href="#"
-              className="h-9 w-9 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-500 hover:bg-red-500 hover:text-white hover:border-red-500 transition-colors duration-300 shadow-xs"
+              className="h-9 w-9 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-500 hover:bg-[#FF0000] hover:text-white hover:border-[#FF0000] transition-colors duration-300 shadow-xs"
             >
               <FaYoutube size={18} />
             </Link>
@@ -169,7 +168,7 @@ export default function FooterPage() {
             />
             <button
               type="submit"
-              className="w-full py-2.5 bg-red-600 hover:bg-red-500 text-white text-sm font-medium rounded-lg transition-colors cursor-pointer shadow-xs"
+              className="w-full py-2.5 bg-red-600 hover:bg-red-700 text-white text-sm font-medium rounded-lg transition-colors cursor-pointer shadow-xs"
             >
               Subscribe
             </button>

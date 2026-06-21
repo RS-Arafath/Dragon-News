@@ -43,7 +43,7 @@ const newsDetailsPage =async ({ params }) => {
       <div className="flex justify-start">
         <Link
           href={`/category/${news.category_id}`}
-          className="btn bg-red-600 hover:bg-red-500 text-white border-none rounded-lg px-6 flex items-center gap-2 normal-case font-medium transition-colors"
+          className="btn bg-red-600 hover:bg-red-700 text-white border-none rounded-lg px-6 flex items-center gap-2 normal-case font-medium transition-colors"
         >
           <FaArrowLeft className="text-sm" />
           See other news for this category
