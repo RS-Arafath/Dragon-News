@@ -12,7 +12,7 @@ const MainLayout = ({children}) => {
       <BreakingNews></BreakingNews>
       <Navbar></Navbar>
      
-{children}
+
     </div>
   );
 };
