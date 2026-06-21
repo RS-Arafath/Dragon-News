@@ -6,15 +6,20 @@ import RightSideBar from '@/components/homepage/news/RightSideBar';
 import { getCategories, getNewsByCategoryId } from '@/lib/data';
 
 export const generateMetadata = async ({ params }) => {
+  // 1. Await params to safely extract the dynamic 'id' (Required in Next.js 15+)
   const { id } = await params;
-  console.log(id),'cat id';
-   console.log(id,'iddddddd');
-  const category = await getCategories(id);
-  console.log(category.category_name);
-   return {
-     title: category.category_name,
-   };
-}
+
+  // 2. Fetch the entire categories array from the API
+  const categories = await getCategories();
+
+  // 3. Find the specific category object that matches the URL param 'id'
+  const currentCategory = categories?.find((cat) => cat.category_id === id);
+
+  // 4. Return the metadata. Fallback to a default title if the category is not found.
+  return {
+    title: currentCategory ? currentCategory.category_name : 'Category Details',
+  };
+};
 
 const NewsCategoryPage = async ({ params }) => {
   const { id } = await params;
@@ -22,7 +27,7 @@ const NewsCategoryPage = async ({ params }) => {
   const categories = await getCategories();
   //console.log('categories data', categories);
   const news = await getNewsByCategoryId(id);
- // console.log('news', news);
+  // console.log('news', news);
   return (
     <div className="grid grid-cols-4 gap-5 items-start mb-10">
       <div className="sticky top-20 h-screen overflow-y-auto no-scrollbar">
