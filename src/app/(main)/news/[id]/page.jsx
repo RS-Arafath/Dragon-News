@@ -4,14 +4,20 @@ import Link from 'next/link';
 import React from 'react';
 import { FaArrowLeft } from 'react-icons/fa';
 import { format, compareAsc } from 'date-fns';
-export const metadata = {
-  title: 'The Dragon News - Details',
-};
+export const generateMetadata = async ({ params }) => {
+  const { id } = await params;
+  // console.log(id,'iddddddd');
+  const news = await getNewsDetailsById(id);
+  return {
+    title: news.title,
+    description:news.details
+  }
+}
 const newsDetailsPage =async ({ params }) => {
   const {id} = await params;
   //console.log(id,'params res');
   const news = await getNewsDetailsById(id);
-  console.log(news, 'details');
+  //console.log(news, 'details');
   
   const {
     title,

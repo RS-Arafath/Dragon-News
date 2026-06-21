@@ -5,9 +5,9 @@ import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 import footer_Logo from "@/assets/logo.png"
 export default function FooterPage() {
   return (
-    <footer className="bg-gray-100 text-gray-600 font-sans border-t border-gray-200">
+    <footer className="bg-gray-100 text-gray-600 font-sans border-t border-gray-200 ">
       {/* Main Footer Container using Responsive Grid Columns */}
-      <div className="max-w-7xl mx-auto px-4 py-12 md:py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+      <div className="max-w-7xl mx-auto px-4 py-12 md:py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 ">
         {/* Column 1: Brand Logo, Info & Social Links */}
         <div className="flex flex-col gap-4">
           <Link href="/" className="inline-block">

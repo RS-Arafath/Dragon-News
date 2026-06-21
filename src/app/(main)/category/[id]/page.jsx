@@ -5,7 +5,16 @@ import NoNewsCard from '@/components/homepage/news/NoNewscard';
 import RightSideBar from '@/components/homepage/news/RightSideBar';
 import { getCategories, getNewsByCategoryId } from '@/lib/data';
 
-
+export const generateMetadata = async ({ params }) => {
+  const { id } = await params;
+  console.log(id),'cat id';
+   console.log(id,'iddddddd');
+  const category = await getCategories(id);
+  console.log(category.category_name);
+   return {
+     title: category.category_name,
+   };
+}
 
 const NewsCategoryPage = async ({ params }) => {
   const { id } = await params;
