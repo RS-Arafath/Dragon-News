@@ -6,13 +6,13 @@ import RightSideBar from '@/components/homepage/news/RightSideBar';
 import { getCategories, getNewsByCategoryId } from '@/lib/data';
 
 export const generateMetadata = async ({ params }) => {
-  // 1. Await params to safely extract the dynamic 'id' (Required in Next.js 15+)
+ 
   const { id } = await params;
 
-  // 2. Fetch the entire categories array from the API
+ 
   const categories = await getCategories();
 
-  // 3. Find the specific category object that matches the URL param 'id'
+  //  Find the specific category object that matches the URL param 'id'
   const currentCategory = categories?.find((cat) => cat.category_id === id);
 
   // 4. Return the metadata. Fallback to a default title if the category is not found.
