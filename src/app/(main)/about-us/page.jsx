@@ -1,5 +1,8 @@
 import React from 'react';
-
+export const metadata = {
+  title: 'The Dragon News - About Us'
+ 
+};
 const AboutUsPage = () => {
  return (
    <main className="bg-slate-50 min-h-screen">
