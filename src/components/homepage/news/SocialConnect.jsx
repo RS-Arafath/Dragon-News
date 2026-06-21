@@ -37,7 +37,7 @@ const SocialConnectPage = () => {
         {/* YouTube Row */}
         <div className="flex items-center gap-4 p-4">
           <Link
-            href="#"
+            href="https://www.youtube.com/@RSArafath"
             className="flex items-center justify-center bg-gray-100 h-12 w-12 rounded-full text-red-600 hover:bg-gray-200 transition"
           >
             <FaYoutube className="h-6 md:h-8 w-6 md:w-8" />
