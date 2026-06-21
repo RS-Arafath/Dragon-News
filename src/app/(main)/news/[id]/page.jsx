@@ -4,6 +4,9 @@ import Link from 'next/link';
 import React from 'react';
 import { FaArrowLeft } from 'react-icons/fa';
 import { format, compareAsc } from 'date-fns';
+export const metadata = {
+  title: 'The Dragon News - Details',
+};
 const newsDetailsPage =async ({ params }) => {
   const {id} = await params;
   //console.log(id,'params res');

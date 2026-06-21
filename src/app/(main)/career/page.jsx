@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
-
+export const metadata = {
+  title: 'The Dragon News - career',
+};
 const Career = () => {
   return (
     <main className="  bg-slate-50 flex items-center justify-center px-4 mt-10">

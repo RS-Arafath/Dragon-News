@@ -5,6 +5,9 @@ import enterTainment from '@/assets/enterTainment.jpg';
 import underConstructionPage from '@/app/(main)/underConstraction/page';
 import Link from 'next/link';
 import Image from 'next/image';
+export const metadata = {
+  title: 'The Dragon News - Feature',
+};
 const DailyFeature = () => {
   return (
     <div>
